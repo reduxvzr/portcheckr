@@ -12,7 +12,7 @@
 - Configuration yaml file for multiple services
 - Check for UDP vpn ports, for example, openvpn, wireguard.
 
-## Confuration
+## Configuration
 
 Global environmets: 
 
