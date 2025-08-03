@@ -1,0 +1,17 @@
+services:
+  portCheckr:
+    container_name: portcheckr
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      PYTHONUNBUFFERED: 1
+      TZ: UTC
+      NOTIFICATION_TIMEOUT_MINUTES: 30
+      PORT: 22
+      HOST: example.com
+      HOST_NAME: Example
+      SERVICE_NAME: SSH
+      TELEGRAM_BOT_API_TOKEN: 8912485011:FBwECyttIhtebxSlP5N4wR3Qi5ip8fuSvku
+      TELEGRAM_CHAT_ID: 2487194182
